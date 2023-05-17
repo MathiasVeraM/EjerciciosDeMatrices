@@ -13,7 +13,12 @@ int main(){
     //Hacer el for para definir la matriz con ceros
     for(i=0;i<=filas;i++){
         for(j=0;j<=columnas;j++){
-            Matriz[i][j]=0;
+            //Poner la condicion para que sea la diagonal principal unos. Es decir, que la fila y la columna sean iguales
+            if(i==j){
+                Matriz[i][j]=1;
+            }else{
+                Matriz[i][j]=0;
+            }
             printf("%d ", Matriz[i][j]);
         }
         printf("\n");
