@@ -8,8 +8,9 @@ int main(){
     scanf("%d",&filas);
     printf("Por favor ingrese el numero de columnas de la matriz: ");
     scanf("%d",&columnas);
+    int x=filas, y=columnas;
     //Le inicialice la matriz para que me sirva
-    int Matriz[2][2];
+    int Matriz[x][y];
     //Hacer el for para definir la matriz con ceros
     for(i=0;i<=filas;i++){
         for(j=0;j<=columnas;j++){
