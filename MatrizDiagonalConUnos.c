@@ -11,14 +11,19 @@ int main(){
     //Le inicialice la matriz para que me sirva
     int Matriz[2][2];
     //Hacer el for para definir la matriz con ceros
-    for(i=0;i<=filas;i++){
-        for(j=0;j<=columnas;j++){
+    for(i=0;i<filas;i++){
+        for(j=0;j<columnas;j++){
             //Poner la condicion para que sea la diagonal principal unos. Es decir, que la fila y la columna sean iguales
             if(i==j){
                 Matriz[i][j]=1;
             }else{
                 Matriz[i][j]=0;
             }
+        }
+    }
+    //Hacer el for para imprimir la matriz
+    for(i=0;i<filas;i++){
+        for(j=0;j<columnas;j++){
             printf("%d ", Matriz[i][j]);
         }
         printf("\n");
